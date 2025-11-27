@@ -4,21 +4,21 @@ Um aplicativo de desktop em **C# / Windows Forms** que gerencia reservas de viag
 
 ---
 
-## 📋 Visão Geral
+##  Visão Geral
 
 Este projeto é um sistema completo para uma agência de viagens que permite:
 
-- ✅ **Autenticação de funcionários** (senha ou rosto)
-- ✅ **Cadastro de rostos** para reconhecimento facial
-- ✅ **Gestão de clientes e funcionários** (CRUD)
-- ✅ **Criação e visualização de reservas** (viagens, hotéis, passagens)
-- ✅ **Histórico de acessos** (quem entrou e quando)
-- ✅ **Relatórios em PDF**
-- ✅ **Painel de administrador**
+-  **Autenticação de funcionários** (senha ou rosto)
+-  **Cadastro de rostos** para reconhecimento facial
+-  **Gestão de clientes e funcionários** (CRUD)
+-  **Criação e visualização de reservas** (viagens, hotéis, passagens)
+-  **Histórico de acessos** (quem entrou e quando)
+-  **Relatórios em PDF**
+-  **Painel de administrador**
 
 
 
-## 👥 Equipa & Créditos
+##  Equipa & Créditos
 
 - **Hernani Machado** - [@bengazai](https://www.instagram.com/bengazai/)
 - **Nazaré Sant'Ana** - [@iamnaza1](https://www.instagram.com/iamnaza1/)
@@ -31,20 +31,20 @@ Este projeto é um sistema completo para uma agência de viagens que permite:
 ---
 
 
-## 🎮 Como Funciona (Visão Simples)
+## Como Funciona (Visão Simples)
 
-### 1️⃣ **Arranque da Aplicação**
+### 1 **Arranque da Aplicação**
 ```
 App inicia → Tela Inicial (InicioForm)
 ```
 O utilizador vê opções: Login, Cadastro, etc.
 
-### 2️⃣ **Autenticação por Senha**
+### 2 **Autenticação por Senha**
 ```
 Username + Password → Banco de dados valida → Menu Principal
 ```
 
-### 3️⃣ **Autenticação por Rosto** (O legal!)
+### 3 **Autenticação por Rosto** (O legal!)
 ```
 a) PRIMEIRA VEZ: Cadastrar rosto
    Câmera liga → Detecta a sua cara → Guarda no banco
@@ -53,7 +53,7 @@ b) PRÓXIMAS VEZES: Login com rosto
    Câmera liga → Compara com caras guardadas → Reconhece → Login automático
 ```
 
-### 4️⃣ **Dentro do Sistema**
+### 4 **Dentro do Sistema**
 - Criar reservas de viagens
 - Ver histórico de reservas
 - Gerar relatórios (PDF)
@@ -61,7 +61,7 @@ b) PRÓXIMAS VEZES: Login com rosto
 
 ---
 
-## 🔍 Como Funciona o Reconhecimento Facial
+##  Como Funciona o Reconhecimento Facial
 
 ### **Fase 1: Treinamento (Setup)**
 ```
@@ -99,7 +99,7 @@ Imagina um **guarda de segurança** numa discoteca:
 
 ---
 
-## 🛠️ Tecnologias Usadas
+##  Tecnologias Usadas
 
 | Componente | Versão | Descrição |
 |---|---|---|
@@ -112,7 +112,7 @@ Imagina um **guarda de segurança** numa discoteca:
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 ReservaDeViagens/
@@ -145,7 +145,7 @@ ReservaDeViagens/
 
 ---
 
-## 🚀 Como Instalar e Executar
+##  Como Instalar e Executar
 
 ### Requisitos Prévios
 
@@ -209,7 +209,7 @@ Teste com credenciais padrão (se existirem na BD):
 
 ---
 
-## 🔐 Autenticação Detalhada
+##  Autenticação Detalhada
 
 ### Login por Senha
 ```
@@ -243,7 +243,7 @@ Teste com credenciais padrão (se existirem na BD):
 
 ---
 
-## 📸 Cadastro de Rosto
+##  Cadastro de Rosto
 
 Antes de fazer login com rosto, o funcionário precisa registar a sua cara:
 
@@ -279,48 +279,48 @@ Antes de fazer login com rosto, o funcionário precisa registar a sua cara:
 
 ---
 
-## ⚙️ Funcionalidades Principais
+##  Funcionalidades Principais
 
-### 👤 Cliente Pode:
-- ✅ Ver perfil
-- ✅ Fazer nova reserva (viagem + hotel + passagem)
-- ✅ Ver histórico de reservas
-- ✅ Ver histórico de acessos
+###  Cliente Pode:
+-  Ver perfil
+-  Fazer nova reserva (viagem + hotel + passagem)
+-  Ver histórico de reservas
+-  Ver histórico de acessos
 
-### 👨‍💼 Funcionário Pode:
-- ✅ Tudo que cliente pode
-- ✅ Ver outros clientes
+###  Funcionário Pode:
+-  Tudo que cliente pode
+-  Ver outros clientes
 
-### 🛡️ Admin Pode:
-- ✅ Tudo que funcionário pode
-- ✅ Gerir clientes (adicionar, editar, deletar)
-- ✅ Gerir funcionários (adicionar, editar, deletar)
-- ✅ Ver todos os logs de acesso
-- ✅ Gerar relatórios (PDF)
+###  Admin Pode:
+-  Tudo que funcionário pode
+-  Gerir clientes (adicionar, editar, deletar)
+-  Gerir funcionários (adicionar, editar, deletar)
+-  Ver todos os logs de acesso
+-  Gerar relatórios (PDF)
 
 ---
 
-## 🐛 Resolução de Problemas
+##  Resolução de Problemas
 
-### ❌ "Erro de conexão com banco de dados"
+### 1. "Erro de conexão com banco de dados"
 **Solução:**
 - Verifique se MySQL Server está a correr
 - Verifique a connection string (username, password, IP)
 - Verifique se base de dados `tripagency` existe
 
-### ❌ "Arquivo haarcascade_frontalface_default.xml não encontrado"
+### 2. "Arquivo haarcascade_frontalface_default.xml não encontrado"
 **Solução:**
 - Verifique se o arquivo está na pasta `Resources` do projeto
 - Se não estiver, copie de `sources/haarcascade_frontalface_default.xml`
 - Reconstrua a solução (Build)
 
-### ❌ "Câmera não funciona"
+### 3. "Câmera não funciona"
 **Solução:**
 - Verifique se Windows tem permissão para câmera (Configurações → Privacidade → Câmera)
 - Feche outras aplicações que usem câmera
 - Reinicie a aplicação
 
-### ❌ "Reconhecimento facial muito lento ou impreciso"
+### 4. "Reconhecimento facial muito lento ou impreciso"
 **Solução:**
 - Melhore a iluminação
 - Aumente o número de rostos registados para treino mais robusto
@@ -328,15 +328,15 @@ Antes de fazer login com rosto, o funcionário precisa registar a sua cara:
 
 ---
 
-## 📝 Notas para Desenvolvedores
+## Notas para Desenvolvedores
 
-### Segurança ⚠️
+### Segurança 
 - ⚠️ **IMPORTANTE:** Connection string está hardcoded no código (NÃO USAR EM PRODUÇÃO!)
 - ⚠️ Mover para `App.config` ou variáveis de ambiente
 - ⚠️ Implementar hash de passwords (usar bcrypt, não plain text)
 - ⚠️ Adicionar HTTPS/TLS para comunicação
 
-### Melhorias Futuras 💡
+### Melhorias Futuras 
 - Refatorar: Centralizar queries em camada de acesso a dados (DAL)
 - Melhorar UX: Feedback visual melhor (barras de progresso, contadores)
 - Performance: Cache de rostos em memória
@@ -375,7 +375,7 @@ public class LoginForm : Form {
 
 ---
 
-## 📚 Referências Externas
+##  Referências Externas
 
 - [Microsoft Docs - Windows Forms](https://docs.microsoft.com/en-us/dotnet/desktop/winforms/)
 - [Emgu CV Documentation](https://www.emgu.com/)
@@ -385,13 +385,13 @@ public class LoginForm : Form {
 ---
 
 
-## 📄 Licença
+##  Licença
 
 Este projeto foi desenvolvido para fins educacionais/académicos.
 
 ---
 
-## 📞 Suporte
+##  Suporte
 
 Para dúvidas ou problemas:
 1. Consulte a secção "Resolução de Problemas" acima
