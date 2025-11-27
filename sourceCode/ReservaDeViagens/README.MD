@@ -1,4 +1,4 @@
-# ReservaDeViagens - Sistema de Gestão de Agência de Viagens
+# Além do Mapa - Sistema de Gestão de Agência de Viagens
 
 Um aplicativo de desktop em **C# / Windows Forms** que gerencia reservas de viagens com autenticação por senha **e reconhecimento facial** integrado.
 
@@ -105,7 +105,7 @@ Imagina um **guarda de segurança** numa discoteca:
 |---|---|---|
 | **.NET Framework** | 4.7.2 | Plataforma base |
 | **Windows Forms** | Nativa | Interface gráfica |
-| **MySQL** | 9.5.0 | Banco de dados |
+| **MySQL** (XAMPP) | 9.5.0 | Banco de dados |
 | **Emgu CV** | 4.4.0 | Visão computacional (rosto) |
 | **iTextSharp** | 5.5.13 | Geração de PDFs |
 | **BouncyCastle** | 2.6.2 | Criptografia |
@@ -150,15 +150,18 @@ ReservaDeViagens/
 ### Requisitos Prévios
 
 - **Visual Studio** 2017/2019/2022 (com suporte .NET Framework 4.7.2)
-- **MySQL Server** (versão 5.7+)
+- **XAMPP** (versão PHP 8.2+)
+- **MySQL Workbench**
 - **Câmera de computador** (para reconhecimento facial)
 
 ### Passo 1: Clonar/Descarregar o Projeto
 
+Baixe agora [Aqui](https://github.com/bybenb/project_BeyondTheMap/archive/refs/heads/master.zip) ou Clonando assim:
+
 ```bash
-# Se estiver num repositório Git
-git clone <URL-do-repositorio>
-cd desAppsRedes_1PP/sourceCode
+# Se no repositório Git
+git clone https://github.com/bybenb/project_BeyondTheMap.git
+cd project_BeyondTheMap/sourceCode
 ```
 
 ### Passo 2: Criar a Base de Dados
